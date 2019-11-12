@@ -18,7 +18,7 @@
 			
 			<?php $cur_dir = explode('\\', getcwd()); ?>
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php echo $cur_dir[count($cur_dir)-1]; ?>
+				DataTables Editor <span>annuaire</span> <?php echo getcwd() ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
