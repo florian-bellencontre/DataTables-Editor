@@ -11,7 +11,7 @@
 
 			<?php 
 				$page_name = dirname(__FILE__);
-				$each_page_name = explode('/', $page_name);
+				public $each_page_name = explode('/', $page_name);
 			?>
 
 		<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/moment-2.18.1/dt-1.10.20/b-1.6.1/sl-1.3.1/datatables.min.js"></script>
