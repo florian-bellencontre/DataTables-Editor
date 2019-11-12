@@ -15,7 +15,7 @@ $(document).ready(function() {
 		fields: [
 			{
 				"label": "first_name:",
-				"name": "first_name"
+				"name": "first_name" + table
 			},
 			{
 				"label": "last_name:",
