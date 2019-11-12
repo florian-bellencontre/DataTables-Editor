@@ -16,9 +16,13 @@
 	<body class="dataTables">
 		<div class="container">
 			
-			<?php $cur_dir = explode('\\', getcwd()); ?>
+			<?php 
+				$page_name = dirname(__FILE__);
+				$each_page_name = explode('/', $page_name);
+				
+			?>
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php echo getcwd() ?>
+				DataTables Editor <span>annuaire</span> <?php echo end($each_page_name); ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
