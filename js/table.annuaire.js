@@ -6,7 +6,7 @@
 
 (function($){
 var table = "<?php echo end($each_page_name); ?>";
-window.alert(table);
+window.alert(current_directory);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {

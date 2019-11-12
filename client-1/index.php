@@ -16,7 +16,7 @@
 
 		<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/moment-2.18.1/dt-1.10.20/b-1.6.1/sl-1.3.1/datatables.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/dataTables.editor.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="../js/table.annuaire.js"></script>
+		<script type="text/javascript" var current_directory='<?php echo end($each_page_name); ?>'; charset="utf-8" src="../js/table.annuaire.js"></script>
 	</head>
 	<body class="dataTables">
 		<div class="container">
