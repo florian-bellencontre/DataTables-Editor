@@ -20,7 +20,7 @@
 				DataTables Editor <span>annuaire</span>
 			</h1>
 
-			<?php require(dirname(__FILE__).'/includes/menu.php') ;?>
+			<?php require(dirname(__FILE__).'/../includes/menu.php') ;?>
 
 			<table cellpadding="0" cellspacing="0" border="0" class="display" id="annuaire" width="100%">
 				<thead>
