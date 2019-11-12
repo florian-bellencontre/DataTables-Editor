@@ -8,7 +8,7 @@
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
-		ajax: 'php/table.annuaire.php',
+		ajax: '../php/table.annuaire.php',
 		table: '#annuaire',
 		fields: [
 			{
@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 	var table = $('#annuaire').DataTable( {
 		dom: 'Bfrtip',
-		ajax: 'php/table.annuaire.php',
+		ajax: '../php/table.annuaire.php',
 		columns: [
 			{
 				"data": "first_name"
