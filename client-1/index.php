@@ -17,7 +17,7 @@
 		<div class="container">
 
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php dirname(__FILE__); ?>
+				DataTables Editor <span>annuaire</span> <?php $cur_dir = explode('\\', getcwd()); echo $cur_dir[count($cur_dir)-1]; ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
