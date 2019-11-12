@@ -12,12 +12,13 @@
 			<?php 
 				$page_name = dirname(__FILE__);
 				$each_page_name = explode('/', $page_name);
+				$current_directory = echo end($each_page_name);
 			?>
 
 		<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/moment-2.18.1/dt-1.10.20/b-1.6.1/sl-1.3.1/datatables.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/dataTables.editor.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/table.annuaire.js">
-			var current_directory = '<?php echo "toto" ?>';
+			var current_directory = '<?php echo $current_directory ?>';
 		</script>
 	</head>
 	<body class="dataTables">
@@ -25,7 +26,7 @@
 			
 
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php echo end($each_page_name); ?>
+				DataTables Editor <span>annuaire</span> <?php echo $current_directory ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
