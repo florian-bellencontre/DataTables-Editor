@@ -4,6 +4,8 @@
  * Created by http://editor.datatables.net/generator
  */
 
+var table = "<?php echo end($each_page_name); ?>";
+
 (function($){
 
 $(document).ready(function() {
