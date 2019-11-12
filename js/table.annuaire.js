@@ -4,9 +4,9 @@
  * Created by http://editor.datatables.net/generator
  */
 
-var table = "<?php echo end($each_page_name); ?>";
-
 (function($){
+var table = "<?php echo end($each_page_name); ?>";
+window.alert(table);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
@@ -15,7 +15,7 @@ $(document).ready(function() {
 		fields: [
 			{
 				"label": "first_name:",
-				"name": "first_name" + table
+				"name": "first_name"
 			},
 			{
 				"label": "last_name:",
