@@ -15,9 +15,10 @@
 	</head>
 	<body class="dataTables">
 		<div class="container">
-
+			
+			<?php $myVar = str_replace('/', '', $_SERVER[REQUEST_URI]); ?>
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php $cur_dir = explode('\\', getcwd()); echo $cur_dir[count($cur_dir)-1]; ?>
+				DataTables Editor <span>annuaire</span> <?php echo $myVar ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
