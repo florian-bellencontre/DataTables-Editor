@@ -9,11 +9,11 @@
 		<link rel="stylesheet" type="text/css" href="../css/generator-base.css">
 		<link rel="stylesheet" type="text/css" href="../css/editor.dataTables.min.css">
 
-			<?php 
-				$page_name = dirname(__FILE__);
-				$each_page_name = explode('/', $page_name);
-				$current_directory = end($each_page_name);
-			?>
+		<?php 
+			$page_name = dirname(__FILE__);
+			$each_page_name = explode('/', $page_name);
+			$current_directory = end($each_page_name);
+		?>
 
 		<script type="text/javascript" charset="utf-8" src="https://cdn.datatables.net/v/dt/jqc-1.12.4/moment-2.18.1/dt-1.10.20/b-1.6.1/sl-1.3.1/datatables.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../js/dataTables.editor.min.js"></script>

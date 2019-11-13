@@ -22,13 +22,6 @@ use
 // The following statement can be removed after the first run (i.e. the database
 // table has been created). It is a good idea to do this to help improve
 // performance.
-<?php 
-	$page_name = dirname(__FILE__);
-	$each_page_name = explode('/', $page_name);
-	$current_directory = end($each_page_name);
-?>
-var_dump($current_directory);
-
 $db->sql( "CREATE TABLE IF NOT EXISTS \"client1\" (
 	\"id\" serial,
 	\"first_name\" text,
