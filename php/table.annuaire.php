@@ -22,7 +22,7 @@ use
 // The following statement can be removed after the first run (i.e. the database
 // table has been created). It is a good idea to do this to help improve
 // performance.
-$db->sql( "CREATE TABLE IF NOT EXISTS \"client-1\" (
+$db->sql( "CREATE TABLE IF NOT EXISTS \"client1\" (
 	\"id\" serial,
 	\"first_name\" text,
 	\"last_name\" text,
@@ -35,7 +35,7 @@ $db->sql( "CREATE TABLE IF NOT EXISTS \"client-1\" (
 );" );
 
 // Build our Editor instance and process the data coming from _POST
-Editor::inst( $db, 'client-1', 'id' )
+Editor::inst( $db, 'client1', 'id' )
 	->fields(
 		Field::inst( 'first_name' ),
 		Field::inst( 'last_name' ),

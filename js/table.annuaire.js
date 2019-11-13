@@ -13,7 +13,7 @@ alert('#' + current_directory)
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
 		ajax: '../php/table.annuaire.php',
-		table: '#client-1',
+		table: '#client1',
 		fields: [
 			{
 				"label": "first_name:",
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		]
 	} );
 
-	var table = $('#client-1').DataTable( {
+	var table = $('#client1').DataTable( {
 		dom: 'Bfrtip',
 		ajax: '../php/table.annuaire.php',
 		columns: [
