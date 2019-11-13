@@ -26,7 +26,7 @@
 			
 
 			<h1>
-				DataTables Editor <span>annuaire</span> <?php echo $current_directory ?>
+				DataTables Editor <span>annuaire</span> <?php $current_directory ?>
 			</h1>
 
 			<?php require($_SERVER['DOCUMENT_ROOT'].'/includes/menu.php'); ?>
