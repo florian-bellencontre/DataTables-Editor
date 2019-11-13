@@ -7,7 +7,7 @@
 (function($){
 	
 var urlChunks = location.href.split('/');
-alert(urlChunks[urlChunks.length - 1]);
+alert(urlChunks[urlChunks.length - 2]);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
