@@ -8,6 +8,7 @@
 	
 var urlChunks = location.href.split('/');
 var current_directory = (urlChunks[urlChunks.length - 2]);
+alert('#' + current_directory)
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
