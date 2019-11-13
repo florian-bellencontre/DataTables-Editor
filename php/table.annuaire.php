@@ -3,6 +3,7 @@
 $page_name = dirname(__FILE__);
 $each_page_name = explode('/', $page_name);
 $current_directory = end($each_page_name);
+print_r($current_directory);
 /*
  * Editor server script for DB table annuaire
  * Created by http://editor.datatables.net/generator
@@ -25,7 +26,7 @@ use
 // The following statement can be removed after the first run (i.e. the database
 // table has been created). It is a good idea to do this to help improve
 // performance.
-$db->sql( "CREATE TABLE IF NOT EXISTS \"" . $current_directory . "\" (
+$db->sql( "CREATE TABLE IF NOT EXISTS \"" . echo $current_directory; . "\" (
 	\"id\" serial,
 	\"first_name\" text,
 	\"last_name\" text,
