@@ -13,7 +13,7 @@
 // DataTables PHP library and database connection
 include( "lib/DataTables.php" );
 
-$current_directory = "client2"
+$current_directory = "client2";
 //$current_directory = basename(__DIR__);
 
 // Alias Editor classes so they are easy to use
