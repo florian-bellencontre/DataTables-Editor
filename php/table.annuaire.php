@@ -1,5 +1,10 @@
 <?php
 
+	$page_name = dirname(__FILE__);
+	$each_page_name = explode('/', $page_name);
+	$current_directory = end($each_page_name);
+
+var_dump($current_directory);
 /*
  * Editor server script for DB table annuaire
  * Created by http://editor.datatables.net/generator
