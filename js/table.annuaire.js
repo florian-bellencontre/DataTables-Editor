@@ -6,10 +6,8 @@
 
 (function($){
 	
-var path = document.location.pathname;
-var directory = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
-window.alert(directory);
-
+var urlChunks = location.href.split('/');
+alert(urlChunks[urlChunks.length - 1]);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
