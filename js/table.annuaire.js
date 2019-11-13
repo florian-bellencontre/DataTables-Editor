@@ -7,12 +7,12 @@
 (function($){
 	
 var urlChunks = location.href.split('/');
-alert(urlChunks[urlChunks.length - 2]);
+var current_directory = (urlChunks[urlChunks.length - 2]);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
 		ajax: '../php/table.annuaire.php',
-		table: '#annuaire',
+		table: '#current_directory',
 		fields: [
 			{
 				"label": "first_name:",
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		]
 	} );
 
-	var table = $('#annuaire').DataTable( {
+	var table = $('#current_directory').DataTable( {
 		dom: 'Bfrtip',
 		ajax: '../php/table.annuaire.php',
 		columns: [
