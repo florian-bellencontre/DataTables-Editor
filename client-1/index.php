@@ -21,7 +21,6 @@
 	</head>
 	<body class="dataTables">
 		<div class="container">
-			
 
 			<h1>
 				DataTables Editor <span>annuaire</span>
