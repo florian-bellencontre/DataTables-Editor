@@ -6,9 +6,9 @@
 
 (function($){
 	
-var loc = window.location.pathname;
-var dir = loc.substring(0, loc.lastIndexOf('/'));
-window.alert(dir);
+var path = document.location.pathname;
+var directory = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
+window.alert(directory);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
