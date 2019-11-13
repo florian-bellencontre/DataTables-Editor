@@ -5,7 +5,10 @@
  */
 
 (function($){
-// window.alert(current_directory);
+	
+var loc = window.location.pathname;
+var dir = loc.substring(0, loc.lastIndexOf('/'));
+window.alert(dir);
 
 $(document).ready(function() {
 	var editor = new $.fn.dataTable.Editor( {
